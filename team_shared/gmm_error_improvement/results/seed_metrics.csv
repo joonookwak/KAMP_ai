@@ -1,0 +1,4 @@
+seed,FP,FN,FN_warmup,FN_before_first_alarm,FN_after_first_alarm,FN_no_clip_alarm,normal_alarm_clips,fault_no_alarm_clips,early_0.5,threshold
+0,12,82,42,5,35,0,2,0,1.0,15.002825712320602
+1,9,84,42,3,39,0,2,0,1.0,15.522095561851518
+2,9,84,42,3,39,0,2,0,1.0,15.416438312903182
