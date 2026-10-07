@@ -1,0 +1,7 @@
+data/
+local_results/
+**/__pycache__/
+*.joblib
+*.pyc
+.env
+.DS_Store
