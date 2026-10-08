@@ -1,0 +1,64 @@
+{
+  "protocol_version": "timestamp_ad_window_v3",
+  "sensor_order": [
+    "AI0_Vibration",
+    "AI1_Vibration",
+    "AI2_Current"
+  ],
+  "source_files": [
+    {
+      "path": "press_data_normal.csv",
+      "sha256": "f2d61cb3b3108f49a3305d2966b3a31f26942ac8af8ffc9eb531b432b945b0a7",
+      "raw_rows": 20000,
+      "clean_rows": 19999,
+      "clips": 599
+    },
+    {
+      "path": "outlier_data.csv",
+      "sha256": "9fad8c238e63dba3257d8be32a32362548955c772171a95c0d2af61b0435ed2e",
+      "raw_rows": 600,
+      "clean_rows": 600,
+      "clips": 21
+    }
+  ],
+  "gap_seconds": 0.5,
+  "window_sizes": [
+    1,
+    2,
+    3,
+    5,
+    8,
+    10,
+    15,
+    20,
+    30
+  ],
+  "train_stride": 1,
+  "test_stride": 1,
+  "forecast_horizon_samples": 1,
+  "calibration_quantile": 0.99,
+  "threshold_comparison": "strict >",
+  "score": "method-specific causal score; definitions in training JSON",
+  "warmup": "no alarm (False); included in all-timestamp metrics; anomaly warmup counts as FN",
+  "alarm_policy": "per-timestamp threshold; no latch or retrospective point adjustment",
+  "split_clips": {
+    "calibration": 120,
+    "fault_test": 21,
+    "normal_test": 120,
+    "train": 305,
+    "validation": 54
+  },
+  "normalization_mean": [
+    -9.45069916488639e-05,
+    -9.501951835307828e-05,
+    1.5406727361623618
+  ],
+  "normalization_scale": [
+    0.07375305524616267,
+    0.12376241093170567,
+    127.23804382873585
+  ],
+  "model_selection": "normal-only hyperparameters; forecasting W uses normal validation MSE; detector W not selected",
+  "interpretation": "fault file is one episode; already examined during development; exploratory comparison",
+  "minimum_target_index": 0
+}
