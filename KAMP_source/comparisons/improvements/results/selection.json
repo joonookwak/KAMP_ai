@@ -1,0 +1,29 @@
+{
+  "rule": "retain 100% fault first alarm by 0.5s; mean FP <= original, normal alerted clips <=2 every seed; maximize mean timestamp F1; if no improvement retain original",
+  "eligible": [
+    {
+      "variant": "StartupMarginal",
+      "policy": "point",
+      "F1": 0.9388234298648276,
+      "FP": 10.0,
+      "FN": 60.333333333333336,
+      "delay_mean": 0.10793650793650793
+    },
+    {
+      "variant": "Original",
+      "policy": "point",
+      "F1": 0.9171602753195675,
+      "FP": 10.0,
+      "FN": 83.33333333333333,
+      "delay_mean": 0.2174603174603175
+    }
+  ],
+  "recommended": {
+    "variant": "StartupMarginal",
+    "policy": "point",
+    "F1": 0.9388234298648276,
+    "FP": 10.0,
+    "FN": 60.333333333333336,
+    "delay_mean": 0.10793650793650793
+  }
+}

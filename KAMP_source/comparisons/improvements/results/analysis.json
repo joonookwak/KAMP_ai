@@ -1,0 +1,127 @@
+{
+  "protocol": "original saved 3-sensor GMM W2, no fitting/threshold changes",
+  "seed_metrics": [
+    {
+      "seed": 0,
+      "FP": 12,
+      "FN": 82,
+      "FN_warmup": 42,
+      "FN_before_first_alarm": 5,
+      "FN_after_first_alarm": 35,
+      "FN_no_clip_alarm": 0,
+      "normal_alarm_clips": 2,
+      "fault_no_alarm_clips": 0,
+      "early_0.5": 1.0,
+      "threshold": 15.002825712320602
+    },
+    {
+      "seed": 1,
+      "FP": 9,
+      "FN": 84,
+      "FN_warmup": 42,
+      "FN_before_first_alarm": 3,
+      "FN_after_first_alarm": 39,
+      "FN_no_clip_alarm": 0,
+      "normal_alarm_clips": 2,
+      "fault_no_alarm_clips": 0,
+      "early_0.5": 1.0,
+      "threshold": 15.522095561851518
+    },
+    {
+      "seed": 2,
+      "FP": 9,
+      "FN": 84,
+      "FN_warmup": 42,
+      "FN_before_first_alarm": 3,
+      "FN_after_first_alarm": 39,
+      "FN_no_clip_alarm": 0,
+      "normal_alarm_clips": 2,
+      "fault_no_alarm_clips": 0,
+      "early_0.5": 1.0,
+      "threshold": 15.416438312903182
+    }
+  ],
+  "seed0_outcome_medians": {
+    "FN": {
+      "margin": -4.555064322233949,
+      "nearest_training_distance": 0.9239490007303636,
+      "AI0_Vibration_step": 0.026888322,
+      "AI0_Vibration_window_max_abs": 0.069143968,
+      "AI0_Vibration_conditional_percentile": 83.22554567502021,
+      "AI0_Vibration_marginal_percentile": 42.697386149285904,
+      "AI1_Vibration_step": 0.017424233500000007,
+      "AI1_Vibration_window_max_abs": 0.086646646,
+      "AI1_Vibration_conditional_percentile": 81.59525734303422,
+      "AI1_Vibration_marginal_percentile": 40.5281595257343,
+      "AI2_Current_step": 27.418140050000012,
+      "AI2_Current_window_max_abs": 135.898605,
+      "AI2_Current_conditional_percentile": 84.66720560495824,
+      "AI2_Current_marginal_percentile": 63.1096739423336
+    },
+    "FP": {
+      "margin": 3.2142012686940973,
+      "nearest_training_distance": 1.7939165354970779,
+      "AI0_Vibration_step": 0.10184449999999999,
+      "AI0_Vibration_window_max_abs": 0.2005715,
+      "AI0_Vibration_conditional_percentile": 99.90568579897601,
+      "AI0_Vibration_marginal_percentile": 99.1646456480733,
+      "AI1_Vibration_step": 0.10436449999999999,
+      "AI1_Vibration_window_max_abs": 0.1901625,
+      "AI1_Vibration_conditional_percentile": 99.05685798976018,
+      "AI1_Vibration_marginal_percentile": 51.522500673672866,
+      "AI2_Current_step": 38.9641,
+      "AI2_Current_window_max_abs": 179.03807,
+      "AI2_Current_conditional_percentile": 71.36890326057667,
+      "AI2_Current_marginal_percentile": 35.138776610078146
+    },
+    "TN": {
+      "margin": -9.017894248970599,
+      "nearest_training_distance": 0.5626575140319126,
+      "AI0_Vibration_step": 0.054995,
+      "AI0_Vibration_window_max_abs": 0.058683,
+      "AI0_Vibration_conditional_percentile": 46.26785233090811,
+      "AI0_Vibration_marginal_percentile": 24.440851522500672,
+      "AI1_Vibration_step": 0.060047,
+      "AI1_Vibration_window_max_abs": 0.064743,
+      "AI1_Vibration_conditional_percentile": 41.040150902721635,
+      "AI1_Vibration_marginal_percentile": 24.467798437078955,
+      "AI2_Current_step": 31.451584999999994,
+      "AI2_Current_window_max_abs": 111.23563,
+      "AI2_Current_conditional_percentile": 29.85718135273511,
+      "AI2_Current_marginal_percentile": 22.66235516033414
+    },
+    "TP": {
+      "margin": 127.29788253329338,
+      "nearest_training_distance": 2.3020318234987807,
+      "AI0_Vibration_step": 0.0703555625,
+      "AI0_Vibration_window_max_abs": 0.20489908,
+      "AI0_Vibration_conditional_percentile": 100.0,
+      "AI0_Vibration_marginal_percentile": 98.3966585825923,
+      "AI1_Vibration_step": 0.04322205249999999,
+      "AI1_Vibration_window_max_abs": 0.19892072,
+      "AI1_Vibration_conditional_percentile": 100.0,
+      "AI1_Vibration_marginal_percentile": 95.08218808946376,
+      "AI2_Current_step": 57.22046800000001,
+      "AI2_Current_window_max_abs": 141.85907,
+      "AI2_Current_conditional_percentile": 100.0,
+      "AI2_Current_marginal_percentile": 100.0
+    }
+  },
+  "all_seed_FP_points": 9,
+  "any_seed_FP_points": 12,
+  "all_seed_scored_FN_points": 38,
+  "provenance": [
+    {
+      "sha256": "f2d61cb3b3108f49a3305d2966b3a31f26942ac8af8ffc9eb531b432b945b0a7",
+      "raw_rows": 20000,
+      "clean_rows": 19999,
+      "clips": 599
+    },
+    {
+      "sha256": "9fad8c238e63dba3257d8be32a32362548955c772171a95c0d2af61b0435ed2e",
+      "raw_rows": 600,
+      "clean_rows": 600,
+      "clips": 21
+    }
+  ]
+}

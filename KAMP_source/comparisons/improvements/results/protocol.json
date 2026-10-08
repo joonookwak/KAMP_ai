@@ -1,0 +1,29 @@
+{
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "study": "exploratory; prior test error analysis informed candidate mechanisms",
+  "thresholds": "normal calibration q99; conditional and joint variants independently recalibrated",
+  "candidate_definitions": {
+    "Original": "saved original GMM W2",
+    "ConditionalCurrent": "-log p(current three points | two vibration three points), same saved GMM",
+    "JointConditional": "min of full NLL and conditional current NLL standardized by normal validation median/IQR; calibration q99",
+    "MoreComponents": "K=1,2,4,8,16 train BIC; original 305 normal training clips",
+    "MoreNormalCoverage": "305 train +54 previously unused validation normal clips, K=1,2,4 BIC; calibration/test unchanged",
+    "StartupMarginal": "saved original GMM marginal at i=0 current only, i=1 last2; q99 matching calibration start index; W2 thereafter",
+    "StartupConditional": "conditional current marginal at i=0/1, index-specific calibration; conditional current W2 thereafter",
+    "StartupJointConditional": "full/conditional standardized-min score at i=0/1 with corresponding normal calibration; joint W2 thereafter"
+  },
+  "alarm_policies": {
+    "point": "instant score > threshold",
+    "consecutive2": "two successive exceedances; warmup resets",
+    "consecutive3": "three successive exceedances; warmup resets",
+    "hysteresis2": "trigger above normal q99, clear after 2 consecutive scores <= normal q95; reset at each clip"
+  },
+  "selection_rule": "retain 100% fault first alarm by 0.5s; mean FP <= original, normal alerted clips <=2 every seed; maximize mean timestamp F1; if no improvement retain original",
+  "future_samples": 0,
+  "retrospective_point_adjustment": false,
+  "raw_data_uploaded": true
+}
