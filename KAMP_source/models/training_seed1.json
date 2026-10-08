@@ -1,0 +1,22 @@
+{
+  "seed": 1,
+  "window": 3,
+  "full_dimension": 12,
+  "training_windows": 9394,
+  "chosen_components": 4,
+  "K_candidates_BIC": {
+    "1": 165153.54029230264,
+    "2": 162366.84114256856,
+    "4": 154920.3096222877
+  },
+  "normal_train_clips": 305,
+  "normal_calibration_clips": 120,
+  "threshold_quantile": 0.99,
+  "threshold_comparison": "strict >",
+  "input_SHA256": {
+    "train.csv": "8c226d7f0a370debe7792ebee3c86dc2a4fa9b47b0b26e1bf873703d32f37803",
+    "calibration.csv": "237b5af93c7416b6bfa088cdd229bd45a72fc84622430db2dd40dfbfc6bf348d"
+  },
+  "test_data_used": false,
+  "normalization": "train-only population standard deviation (ddof=0)"
+}

@@ -1,0 +1,29 @@
+{
+  "seed": 2,
+  "sensor_order": [
+    "AI0_Vibration",
+    "AI1_Vibration",
+    "AI2_Current"
+  ],
+  "mean": [
+    -9.45069916488639e-05,
+    -9.501951835307828e-05,
+    1.5406727361623618
+  ],
+  "scale": [
+    0.07375305524616267,
+    0.12376241093170567,
+    127.23804382873585
+  ],
+  "window": 3,
+  "thresholds_by_observed_points": [
+    8.543144097417862,
+    12.656087879757662,
+    14.389179111391075,
+    17.210779832851532
+  ],
+  "time_unit": "CSV observations, 0.1 seconds inside clip",
+  "policy": "point",
+  "reset": "call reset() at clip boundary",
+  "model_file": "GMM_seed2.joblib"
+}
