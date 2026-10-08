@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.log
+.venv/
+data/
+*_timestamp_diagnostics.csv
+all_error_points.csv

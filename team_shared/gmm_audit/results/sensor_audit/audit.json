@@ -1,0 +1,260 @@
+{
+  "metadata": {
+    "files": [
+      {
+        "sha256": "f2d61cb3b3108f49a3305d2966b3a31f26942ac8af8ffc9eb531b432b945b0a7",
+        "raw_rows": 20000,
+        "clean_rows": 19999,
+        "clips": 599,
+        "filename": "press_data_normal.csv"
+      },
+      {
+        "sha256": "9fad8c238e63dba3257d8be32a32362548955c772171a95c0d2af61b0435ed2e",
+        "raw_rows": 600,
+        "clean_rows": 600,
+        "clips": 21,
+        "filename": "outlier_data.csv"
+      }
+    ],
+    "python": "3.12.14",
+    "versions": {
+      "numpy": "2.5.3",
+      "pandas": "2.2.3",
+      "scikit-learn": "1.9.1"
+    },
+    "window": 2,
+    "stride": 1,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "split_clips": {
+      "train": 305,
+      "validation": 54,
+      "calibration": 120,
+      "normal_test": 120,
+      "fault_test": 21
+    },
+    "threshold": "normal calibration score 99th quantile, strict >",
+    "warmup": "False, included in all-timestamp evaluation"
+  },
+  "recording": {
+    "fault": {
+      "rows": 600,
+      "unique": 340,
+      "grid_fraction_tol_0.01": 1.0,
+      "grid_fraction_tol_1e-5": 0.545
+    },
+    "normal": {
+      "rows": 19999,
+      "unique": 19934,
+      "grid_fraction_tol_0.01": 0.01895094754737737,
+      "grid_fraction_tol_1e-5": 0.0001000050002500125
+    }
+  },
+  "ablation": [
+    {
+      "sensors": [
+        "AI0_Vibration",
+        "AI1_Vibration",
+        "AI2_Current"
+      ],
+      "seed": 0,
+      "K": 4,
+      "F1": 0.9168141592920354,
+      "FAR": 0.00293398533007335,
+      "miss": 0.13666666666666666,
+      "early_0.5": 1.0,
+      "quiet_clips": {
+        "fault_0004": 0.7741935483870968,
+        "fault_0020": 0.8,
+        "fault_0021": 0.5333333333333333
+      },
+      "TP": 518,
+      "FP": 12,
+      "TN": 4078,
+      "FN": 82,
+      "threshold": 15.002825712320602
+    },
+    {
+      "sensors": [
+        "AI0_Vibration",
+        "AI1_Vibration",
+        "AI2_Current"
+      ],
+      "seed": 1,
+      "K": 4,
+      "F1": 0.9173333333333333,
+      "FAR": 0.002200488997555012,
+      "miss": 0.14,
+      "early_0.5": 1.0,
+      "quiet_clips": {
+        "fault_0004": 0.8064516129032258,
+        "fault_0020": 0.8,
+        "fault_0021": 0.5333333333333333
+      },
+      "TP": 516,
+      "FP": 9,
+      "TN": 4081,
+      "FN": 84,
+      "threshold": 15.522095561851518
+    },
+    {
+      "sensors": [
+        "AI0_Vibration",
+        "AI1_Vibration",
+        "AI2_Current"
+      ],
+      "seed": 2,
+      "K": 4,
+      "F1": 0.9173333333333333,
+      "FAR": 0.002200488997555012,
+      "miss": 0.14,
+      "early_0.5": 1.0,
+      "quiet_clips": {
+        "fault_0004": 0.8064516129032258,
+        "fault_0020": 0.8,
+        "fault_0021": 0.5333333333333333
+      },
+      "TP": 516,
+      "FP": 9,
+      "TN": 4081,
+      "FN": 84,
+      "threshold": 15.416438312903182
+    },
+    {
+      "sensors": [
+        "AI0_Vibration",
+        "AI1_Vibration"
+      ],
+      "seed": 0,
+      "K": 4,
+      "F1": 0.734229576008273,
+      "FAR": 0.00293398533007335,
+      "miss": 0.4083333333333333,
+      "early_0.5": 0.7619047619047619,
+      "quiet_clips": {
+        "fault_0004": 0.0,
+        "fault_0020": 0.0,
+        "fault_0021": 0.0
+      },
+      "TP": 355,
+      "FP": 12,
+      "TN": 4078,
+      "FN": 245,
+      "threshold": 13.915829141721051
+    },
+    {
+      "sensors": [
+        "AI0_Vibration",
+        "AI1_Vibration"
+      ],
+      "seed": 1,
+      "K": 4,
+      "F1": 0.7446153846153846,
+      "FAR": 0.00293398533007335,
+      "miss": 0.395,
+      "early_0.5": 0.7619047619047619,
+      "quiet_clips": {
+        "fault_0004": 0.0,
+        "fault_0020": 0.0,
+        "fault_0021": 0.0
+      },
+      "TP": 363,
+      "FP": 12,
+      "TN": 4078,
+      "FN": 237,
+      "threshold": 13.920513655865399
+    },
+    {
+      "sensors": [
+        "AI0_Vibration",
+        "AI1_Vibration"
+      ],
+      "seed": 2,
+      "K": 4,
+      "F1": 0.734229576008273,
+      "FAR": 0.00293398533007335,
+      "miss": 0.4083333333333333,
+      "early_0.5": 0.7619047619047619,
+      "quiet_clips": {
+        "fault_0004": 0.0,
+        "fault_0020": 0.0,
+        "fault_0021": 0.0
+      },
+      "TP": 355,
+      "FP": 12,
+      "TN": 4078,
+      "FN": 245,
+      "threshold": 13.951760618612683
+    },
+    {
+      "sensors": [
+        "AI2_Current"
+      ],
+      "seed": 0,
+      "K": 4,
+      "F1": 0.8988149498632635,
+      "FAR": 0.0009779951100244498,
+      "miss": 0.17833333333333334,
+      "early_0.5": 0.9523809523809523,
+      "quiet_clips": {
+        "fault_0004": 0.8387096774193549,
+        "fault_0020": 0.8,
+        "fault_0021": 0.5333333333333333
+      },
+      "TP": 493,
+      "FP": 4,
+      "TN": 4086,
+      "FN": 107,
+      "threshold": 3.053218866053567
+    },
+    {
+      "sensors": [
+        "AI2_Current"
+      ],
+      "seed": 1,
+      "K": 4,
+      "F1": 0.8988149498632635,
+      "FAR": 0.0009779951100244498,
+      "miss": 0.17833333333333334,
+      "early_0.5": 0.9523809523809523,
+      "quiet_clips": {
+        "fault_0004": 0.8387096774193549,
+        "fault_0020": 0.8,
+        "fault_0021": 0.5333333333333333
+      },
+      "TP": 493,
+      "FP": 4,
+      "TN": 4086,
+      "FN": 107,
+      "threshold": 3.0534443051806583
+    },
+    {
+      "sensors": [
+        "AI2_Current"
+      ],
+      "seed": 2,
+      "K": 4,
+      "F1": 0.8981818181818182,
+      "FAR": 0.001466992665036675,
+      "miss": 0.17666666666666667,
+      "early_0.5": 0.9523809523809523,
+      "quiet_clips": {
+        "fault_0004": 0.8709677419354839,
+        "fault_0020": 0.8,
+        "fault_0021": 0.5333333333333333
+      },
+      "TP": 494,
+      "FP": 6,
+      "TN": 4084,
+      "FN": 106,
+      "threshold": 3.180572544876844
+    }
+  ],
+  "existing_quiet": {
+    "count": 411,
+    "alarm_rate": 0.902676399026764
+  }
+}

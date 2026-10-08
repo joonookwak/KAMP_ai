@@ -1,0 +1,25 @@
+sensor,label,bin,n,error_n,error_rate
+AI0_Vibration,normal,<=train p50,2593,3,0.0011569610489780178
+AI0_Vibration,normal,p50–p90,1134,3,0.0026455026455026454
+AI0_Vibration,normal,p90–p99,117,4,0.03418803418803419
+AI0_Vibration,normal,>train p99,7,2,0.2857142857142857
+AI0_Vibration,fault,<=train p50,140,17,0.12142857142857143
+AI0_Vibration,fault,p50–p90,176,21,0.11931818181818182
+AI0_Vibration,fault,p90–p99,46,2,0.043478260869565216
+AI0_Vibration,fault,>train p99,196,0,0.0
+AI1_Vibration,normal,<=train p50,3088,5,0.0016191709844559584
+AI1_Vibration,normal,p50–p90,679,6,0.008836524300441826
+AI1_Vibration,normal,p90–p99,80,1,0.0125
+AI1_Vibration,normal,>train p99,4,0,0.0
+AI1_Vibration,fault,<=train p50,134,22,0.16417910447761194
+AI1_Vibration,fault,p50–p90,250,18,0.072
+AI1_Vibration,fault,p90–p99,73,0,0.0
+AI1_Vibration,fault,>train p99,101,0,0.0
+AI2_Current,normal,<=train p50,2416,2,0.0008278145695364238
+AI2_Current,normal,p50–p90,1333,8,0.006001500375093774
+AI2_Current,normal,p90–p99,85,0,0.0
+AI2_Current,normal,>train p99,17,2,0.11764705882352941
+AI2_Current,fault,<=train p50,298,18,0.06040268456375839
+AI2_Current,fault,p50–p90,155,20,0.12903225806451613
+AI2_Current,fault,p90–p99,40,2,0.05
+AI2_Current,fault,>train p99,65,0,0.0
