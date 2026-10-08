@@ -1,0 +1,137 @@
+{
+  "error_breakdown": [
+    {
+      "seed": 0,
+      "mode": "original",
+      "FP": 11,
+      "FN": 71,
+      "prefix_FN": 63,
+      "later_before_FN": 1,
+      "later_after_FN": 7
+    },
+    {
+      "seed": 0,
+      "mode": "startup",
+      "FP": 11,
+      "FN": 30,
+      "prefix_FN": 22,
+      "later_before_FN": 1,
+      "later_after_FN": 7
+    },
+    {
+      "seed": 1,
+      "mode": "original",
+      "FP": 12,
+      "FN": 72,
+      "prefix_FN": 63,
+      "later_before_FN": 1,
+      "later_after_FN": 8
+    },
+    {
+      "seed": 1,
+      "mode": "startup",
+      "FP": 13,
+      "FN": 30,
+      "prefix_FN": 21,
+      "later_before_FN": 1,
+      "later_after_FN": 8
+    },
+    {
+      "seed": 2,
+      "mode": "original",
+      "FP": 11,
+      "FN": 70,
+      "prefix_FN": 63,
+      "later_before_FN": 1,
+      "later_after_FN": 6
+    },
+    {
+      "seed": 2,
+      "mode": "startup",
+      "FP": 11,
+      "FN": 29,
+      "prefix_FN": 22,
+      "later_before_FN": 1,
+      "later_after_FN": 6
+    }
+  ],
+  "extra_prefix_TP": {
+    "0": 11,
+    "1": 12,
+    "2": 18
+  },
+  "FN_TP_counts": {
+    "TP": 529,
+    "FN": 8
+  },
+  "medians": {
+    "AI0_Vibration_window_max_abs": {
+      "FN": 0.060402328,
+      "FP": 0.190961,
+      "TN": 0.064251,
+      "TP": 0.18753647
+    },
+    "AI1_Vibration_window_max_abs": {
+      "FN": 0.084739553,
+      "FP": 0.180376,
+      "TN": 0.07028,
+      "TP": 0.19892072
+    },
+    "AI2_Current_window_max_abs": {
+      "FN": 178.21791,
+      "FP": 179.03807,
+      "TN": 114.3706,
+      "TP": 151.39582
+    },
+    "AI2_Current_step": {
+      "FN": 18.477445000000003,
+      "FP": 34.652950000000004,
+      "TN": 31.545875999999993,
+      "TP": 54.83628
+    },
+    "nearest_training_distance": {
+      "FN": 1.2419476397847464,
+      "FP": 2.4079659646272664,
+      "TN": 0.7873920513074397,
+      "TP": 2.8758857457650424
+    }
+  },
+  "false_alarm_clips": [
+    {
+      "clip_id": "normal_0564",
+      "n": 1,
+      "cmin": 189.54899,
+      "cmax": 189.54899
+    },
+    {
+      "clip_id": "normal_0570",
+      "n": 10,
+      "cmin": -182.59766,
+      "cmax": 179.03807
+    }
+  ],
+  "fp_means": {
+    "AI0_Vibration": 0.12780081818181818,
+    "AI1_Vibration": 0.0692929090909091,
+    "AI2_Current": 131.10582881818183
+  },
+  "normal_means": {
+    "AI0_Vibration": 0.04064489853300734,
+    "AI1_Vibration": 0.0525523772616137,
+    "AI2_Current": 87.01530719119805
+  },
+  "conditional_FP": {
+    "AI0_Vibration_conditional_percentile": {
+      "normal_0564": 99.41585535465924,
+      "normal_0570": 99.51321279554938
+    },
+    "AI1_Vibration_conditional_percentile": {
+      "normal_0564": 99.58275382475661,
+      "normal_0570": 98.87065368567455
+    },
+    "AI2_Current_conditional_percentile": {
+      "normal_0564": 99.02642559109874,
+      "normal_0570": 37.5855354659249
+    }
+  }
+}

@@ -1,0 +1,7 @@
+seed,mode,FP,FN,prefix_FN,later_before_FN,later_after_FN
+0,original,11,71,63,1,7
+0,startup,11,30,22,1,7
+1,original,12,72,63,1,8
+1,startup,13,30,21,1,8
+2,original,11,70,63,1,6
+2,startup,11,29,22,1,6

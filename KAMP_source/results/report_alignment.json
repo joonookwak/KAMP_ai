@@ -1,0 +1,17 @@
+{
+  "selected_window": 3,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "full_dimension": 12,
+  "training_windows": 9394,
+  "F1_mean": 0.96503148108433,
+  "F1_sample_std": 0.0012725398712602179,
+  "FP_mean": 11.666666666666666,
+  "FN_mean": 29.666666666666668,
+  "delay_mean_s": 0.10793650793650789,
+  "selection": "Exploratory selection informed by existing test window sweep; independent validation pending",
+  "historical_improvement_window": 2
+}
