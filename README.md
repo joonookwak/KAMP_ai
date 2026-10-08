@@ -4,15 +4,6 @@
 
 **최종 제출 설정은 W=3, seed 0·1·2입니다.** `main`에는 보고서·발표자료·코드·저장 모델·예측결과를 같은 설정으로 맞춘 최종본을 담았습니다.
 
-## 최종 제출 파일
-
-| 제출 항목 | 파일 |
-|---|---|
-| 결과 보고서 | [PDF](submission/KAMP_결과보고서_최종_W3.pdf) · [편집 가능한 DOCX](submission/KAMP_결과보고서_최종_W3.docx) |
-| 소스코드 패키지 | [제출용 ZIP](submission/KAMP_소스코드_최종_W3.zip) · [압축을 푼 코드](KAMP_source/) |
-| 발표자료 | [PDF](submission/유압펌프_GMM_발표자료_최종_W3.pdf) · [편집 가능한 PPTX](submission/유압펌프_GMM_발표자료_최종_W3.pptx) |
-
-ZIP에는 **소스코드, requirements.txt, 학습용 데이터, README, 테스트 예측결과**가 포함되어 있습니다. [파일 해시](submission/SHA256SUMS.txt)로 제출 파일의 동일성을 확인할 수 있습니다.
 
 ## 모델을 개선한 과정
 
