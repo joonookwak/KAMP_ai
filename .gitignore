@@ -1,0 +1,8 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+KAMP_source/runs/
+.ipynb_checkpoints/
+~$*
